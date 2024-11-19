@@ -19,6 +19,7 @@ input:focus {
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  height: 100vh;
 }
 
 .button-container {
@@ -30,7 +31,7 @@ input:focus {
   
 .header {
   background:#2c3e50;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   color: white;
   text-align: center;
@@ -267,8 +268,7 @@ button:active {
   color: black;     
   padding: 15px;    /* Padding xung quanh */
   border-radius: 10px; /* Bo góc */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  z-index: 100;    
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
 }
 
 .history-item {
@@ -302,6 +302,7 @@ button:active {
 
 @media screen and (max-width: 768px) {
   .history-list {
+    animation: slideIn 0.5s ease-out;
     position: relative;  /* Để BXH không cố định */
     width: 100%;         /* Chiều rộng toàn màn hình */
     top: auto;           /* Đưa BXH xuống dưới */
@@ -313,3 +314,4 @@ button:active {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
   }
 }
+
